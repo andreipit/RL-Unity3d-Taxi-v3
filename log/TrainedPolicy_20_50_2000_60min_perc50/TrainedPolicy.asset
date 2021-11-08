@@ -1,0 +1,5516 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f957981ce5bb0cd4591d48ca38d57ebe, type: 3}
+  m_Name: TrainedPolicy
+  m_EditorClassIdentifier: 
+  Observations:
+  - TaxiRow: 0
+    TaxiCol: 0
+    PassLoc: 0
+    DestLoc: 0
+    DebugTaxiLoc: 0
+  - TaxiRow: 0
+    TaxiCol: 0
+    PassLoc: 0
+    DestLoc: 1
+    DebugTaxiLoc: 0
+  - TaxiRow: 0
+    TaxiCol: 0
+    PassLoc: 0
+    DestLoc: 2
+    DebugTaxiLoc: 0
+  - TaxiRow: 0
+    TaxiCol: 0
+    PassLoc: 0
+    DestLoc: 3
+    DebugTaxiLoc: 0
+  - TaxiRow: 0
+    TaxiCol: 0
+    PassLoc: 1
+    DestLoc: 0
+    DebugTaxiLoc: 0
+  - TaxiRow: 0
+    TaxiCol: 0
+    PassLoc: 1
+    DestLoc: 1
+    DebugTaxiLoc: 0
+  - TaxiRow: 0
+    TaxiCol: 0
+    PassLoc: 1
+    DestLoc: 2
+    DebugTaxiLoc: 0
+  - TaxiRow: 0
+    TaxiCol: 0
+    PassLoc: 1
+    DestLoc: 3
+    DebugTaxiLoc: 0
+  - TaxiRow: 0
+    TaxiCol: 0
+    PassLoc: 2
+    DestLoc: 0
+    DebugTaxiLoc: 0
+  - TaxiRow: 0
+    TaxiCol: 0
+    PassLoc: 2
+    DestLoc: 1
+    DebugTaxiLoc: 0
+  - TaxiRow: 0
+    TaxiCol: 0
+    PassLoc: 2
+    DestLoc: 2
+    DebugTaxiLoc: 0
+  - TaxiRow: 0
+    TaxiCol: 0
+    PassLoc: 2
+    DestLoc: 3
+    DebugTaxiLoc: 0
+  - TaxiRow: 0
+    TaxiCol: 0
+    PassLoc: 3
+    DestLoc: 0
+    DebugTaxiLoc: 0
+  - TaxiRow: 0
+    TaxiCol: 0
+    PassLoc: 3
+    DestLoc: 1
+    DebugTaxiLoc: 0
+  - TaxiRow: 0
+    TaxiCol: 0
+    PassLoc: 3
+    DestLoc: 2
+    DebugTaxiLoc: 0
+  - TaxiRow: 0
+    TaxiCol: 0
+    PassLoc: 3
+    DestLoc: 3
+    DebugTaxiLoc: 0
+  - TaxiRow: 0
+    TaxiCol: 0
+    PassLoc: 4
+    DestLoc: 0
+    DebugTaxiLoc: 0
+  - TaxiRow: 0
+    TaxiCol: 0
+    PassLoc: 4
+    DestLoc: 1
+    DebugTaxiLoc: 0
+  - TaxiRow: 0
+    TaxiCol: 0
+    PassLoc: 4
+    DestLoc: 2
+    DebugTaxiLoc: 0
+  - TaxiRow: 0
+    TaxiCol: 0
+    PassLoc: 4
+    DestLoc: 3
+    DebugTaxiLoc: 0
+  - TaxiRow: 0
+    TaxiCol: 1
+    PassLoc: 0
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 0
+    TaxiCol: 1
+    PassLoc: 0
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 0
+    TaxiCol: 1
+    PassLoc: 0
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 0
+    TaxiCol: 1
+    PassLoc: 0
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 0
+    TaxiCol: 1
+    PassLoc: 1
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 0
+    TaxiCol: 1
+    PassLoc: 1
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 0
+    TaxiCol: 1
+    PassLoc: 1
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 0
+    TaxiCol: 1
+    PassLoc: 1
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 0
+    TaxiCol: 1
+    PassLoc: 2
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 0
+    TaxiCol: 1
+    PassLoc: 2
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 0
+    TaxiCol: 1
+    PassLoc: 2
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 0
+    TaxiCol: 1
+    PassLoc: 2
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 0
+    TaxiCol: 1
+    PassLoc: 3
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 0
+    TaxiCol: 1
+    PassLoc: 3
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 0
+    TaxiCol: 1
+    PassLoc: 3
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 0
+    TaxiCol: 1
+    PassLoc: 3
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 0
+    TaxiCol: 1
+    PassLoc: 4
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 0
+    TaxiCol: 1
+    PassLoc: 4
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 0
+    TaxiCol: 1
+    PassLoc: 4
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 0
+    TaxiCol: 1
+    PassLoc: 4
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 0
+    TaxiCol: 2
+    PassLoc: 0
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 0
+    TaxiCol: 2
+    PassLoc: 0
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 0
+    TaxiCol: 2
+    PassLoc: 0
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 0
+    TaxiCol: 2
+    PassLoc: 0
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 0
+    TaxiCol: 2
+    PassLoc: 1
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 0
+    TaxiCol: 2
+    PassLoc: 1
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 0
+    TaxiCol: 2
+    PassLoc: 1
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 0
+    TaxiCol: 2
+    PassLoc: 1
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 0
+    TaxiCol: 2
+    PassLoc: 2
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 0
+    TaxiCol: 2
+    PassLoc: 2
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 0
+    TaxiCol: 2
+    PassLoc: 2
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 0
+    TaxiCol: 2
+    PassLoc: 2
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 0
+    TaxiCol: 2
+    PassLoc: 3
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 0
+    TaxiCol: 2
+    PassLoc: 3
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 0
+    TaxiCol: 2
+    PassLoc: 3
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 0
+    TaxiCol: 2
+    PassLoc: 3
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 0
+    TaxiCol: 2
+    PassLoc: 4
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 0
+    TaxiCol: 2
+    PassLoc: 4
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 0
+    TaxiCol: 2
+    PassLoc: 4
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 0
+    TaxiCol: 2
+    PassLoc: 4
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 0
+    TaxiCol: 3
+    PassLoc: 0
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 0
+    TaxiCol: 3
+    PassLoc: 0
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 0
+    TaxiCol: 3
+    PassLoc: 0
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 0
+    TaxiCol: 3
+    PassLoc: 0
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 0
+    TaxiCol: 3
+    PassLoc: 1
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 0
+    TaxiCol: 3
+    PassLoc: 1
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 0
+    TaxiCol: 3
+    PassLoc: 1
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 0
+    TaxiCol: 3
+    PassLoc: 1
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 0
+    TaxiCol: 3
+    PassLoc: 2
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 0
+    TaxiCol: 3
+    PassLoc: 2
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 0
+    TaxiCol: 3
+    PassLoc: 2
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 0
+    TaxiCol: 3
+    PassLoc: 2
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 0
+    TaxiCol: 3
+    PassLoc: 3
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 0
+    TaxiCol: 3
+    PassLoc: 3
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 0
+    TaxiCol: 3
+    PassLoc: 3
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 0
+    TaxiCol: 3
+    PassLoc: 3
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 0
+    TaxiCol: 3
+    PassLoc: 4
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 0
+    TaxiCol: 3
+    PassLoc: 4
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 0
+    TaxiCol: 3
+    PassLoc: 4
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 0
+    TaxiCol: 3
+    PassLoc: 4
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 0
+    TaxiCol: 4
+    PassLoc: 0
+    DestLoc: 0
+    DebugTaxiLoc: 1
+  - TaxiRow: 0
+    TaxiCol: 4
+    PassLoc: 0
+    DestLoc: 1
+    DebugTaxiLoc: 1
+  - TaxiRow: 0
+    TaxiCol: 4
+    PassLoc: 0
+    DestLoc: 2
+    DebugTaxiLoc: 1
+  - TaxiRow: 0
+    TaxiCol: 4
+    PassLoc: 0
+    DestLoc: 3
+    DebugTaxiLoc: 1
+  - TaxiRow: 0
+    TaxiCol: 4
+    PassLoc: 1
+    DestLoc: 0
+    DebugTaxiLoc: 1
+  - TaxiRow: 0
+    TaxiCol: 4
+    PassLoc: 1
+    DestLoc: 1
+    DebugTaxiLoc: 1
+  - TaxiRow: 0
+    TaxiCol: 4
+    PassLoc: 1
+    DestLoc: 2
+    DebugTaxiLoc: 1
+  - TaxiRow: 0
+    TaxiCol: 4
+    PassLoc: 1
+    DestLoc: 3
+    DebugTaxiLoc: 1
+  - TaxiRow: 0
+    TaxiCol: 4
+    PassLoc: 2
+    DestLoc: 0
+    DebugTaxiLoc: 1
+  - TaxiRow: 0
+    TaxiCol: 4
+    PassLoc: 2
+    DestLoc: 1
+    DebugTaxiLoc: 1
+  - TaxiRow: 0
+    TaxiCol: 4
+    PassLoc: 2
+    DestLoc: 2
+    DebugTaxiLoc: 1
+  - TaxiRow: 0
+    TaxiCol: 4
+    PassLoc: 2
+    DestLoc: 3
+    DebugTaxiLoc: 1
+  - TaxiRow: 0
+    TaxiCol: 4
+    PassLoc: 3
+    DestLoc: 0
+    DebugTaxiLoc: 1
+  - TaxiRow: 0
+    TaxiCol: 4
+    PassLoc: 3
+    DestLoc: 1
+    DebugTaxiLoc: 1
+  - TaxiRow: 0
+    TaxiCol: 4
+    PassLoc: 3
+    DestLoc: 2
+    DebugTaxiLoc: 1
+  - TaxiRow: 0
+    TaxiCol: 4
+    PassLoc: 3
+    DestLoc: 3
+    DebugTaxiLoc: 1
+  - TaxiRow: 0
+    TaxiCol: 4
+    PassLoc: 4
+    DestLoc: 0
+    DebugTaxiLoc: 1
+  - TaxiRow: 0
+    TaxiCol: 4
+    PassLoc: 4
+    DestLoc: 1
+    DebugTaxiLoc: 1
+  - TaxiRow: 0
+    TaxiCol: 4
+    PassLoc: 4
+    DestLoc: 2
+    DebugTaxiLoc: 1
+  - TaxiRow: 0
+    TaxiCol: 4
+    PassLoc: 4
+    DestLoc: 3
+    DebugTaxiLoc: 1
+  - TaxiRow: 1
+    TaxiCol: 0
+    PassLoc: 0
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 0
+    PassLoc: 0
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 0
+    PassLoc: 0
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 0
+    PassLoc: 0
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 0
+    PassLoc: 1
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 0
+    PassLoc: 1
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 0
+    PassLoc: 1
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 0
+    PassLoc: 1
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 0
+    PassLoc: 2
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 0
+    PassLoc: 2
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 0
+    PassLoc: 2
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 0
+    PassLoc: 2
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 0
+    PassLoc: 3
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 0
+    PassLoc: 3
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 0
+    PassLoc: 3
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 0
+    PassLoc: 3
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 0
+    PassLoc: 4
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 0
+    PassLoc: 4
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 0
+    PassLoc: 4
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 0
+    PassLoc: 4
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 1
+    PassLoc: 0
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 1
+    PassLoc: 0
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 1
+    PassLoc: 0
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 1
+    PassLoc: 0
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 1
+    PassLoc: 1
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 1
+    PassLoc: 1
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 1
+    PassLoc: 1
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 1
+    PassLoc: 1
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 1
+    PassLoc: 2
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 1
+    PassLoc: 2
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 1
+    PassLoc: 2
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 1
+    PassLoc: 2
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 1
+    PassLoc: 3
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 1
+    PassLoc: 3
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 1
+    PassLoc: 3
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 1
+    PassLoc: 3
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 1
+    PassLoc: 4
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 1
+    PassLoc: 4
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 1
+    PassLoc: 4
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 1
+    PassLoc: 4
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 2
+    PassLoc: 0
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 2
+    PassLoc: 0
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 2
+    PassLoc: 0
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 2
+    PassLoc: 0
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 2
+    PassLoc: 1
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 2
+    PassLoc: 1
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 2
+    PassLoc: 1
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 2
+    PassLoc: 1
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 2
+    PassLoc: 2
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 2
+    PassLoc: 2
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 2
+    PassLoc: 2
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 2
+    PassLoc: 2
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 2
+    PassLoc: 3
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 2
+    PassLoc: 3
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 2
+    PassLoc: 3
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 2
+    PassLoc: 3
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 2
+    PassLoc: 4
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 2
+    PassLoc: 4
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 2
+    PassLoc: 4
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 2
+    PassLoc: 4
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 3
+    PassLoc: 0
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 3
+    PassLoc: 0
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 3
+    PassLoc: 0
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 3
+    PassLoc: 0
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 3
+    PassLoc: 1
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 3
+    PassLoc: 1
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 3
+    PassLoc: 1
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 3
+    PassLoc: 1
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 3
+    PassLoc: 2
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 3
+    PassLoc: 2
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 3
+    PassLoc: 2
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 3
+    PassLoc: 2
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 3
+    PassLoc: 3
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 3
+    PassLoc: 3
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 3
+    PassLoc: 3
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 3
+    PassLoc: 3
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 3
+    PassLoc: 4
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 3
+    PassLoc: 4
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 3
+    PassLoc: 4
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 3
+    PassLoc: 4
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 4
+    PassLoc: 0
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 4
+    PassLoc: 0
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 4
+    PassLoc: 0
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 4
+    PassLoc: 0
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 4
+    PassLoc: 1
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 4
+    PassLoc: 1
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 4
+    PassLoc: 1
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 4
+    PassLoc: 1
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 4
+    PassLoc: 2
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 4
+    PassLoc: 2
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 4
+    PassLoc: 2
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 4
+    PassLoc: 2
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 4
+    PassLoc: 3
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 4
+    PassLoc: 3
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 4
+    PassLoc: 3
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 4
+    PassLoc: 3
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 4
+    PassLoc: 4
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 4
+    PassLoc: 4
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 4
+    PassLoc: 4
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 1
+    TaxiCol: 4
+    PassLoc: 4
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 0
+    PassLoc: 0
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 0
+    PassLoc: 0
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 0
+    PassLoc: 0
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 0
+    PassLoc: 0
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 0
+    PassLoc: 1
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 0
+    PassLoc: 1
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 0
+    PassLoc: 1
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 0
+    PassLoc: 1
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 0
+    PassLoc: 2
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 0
+    PassLoc: 2
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 0
+    PassLoc: 2
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 0
+    PassLoc: 2
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 0
+    PassLoc: 3
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 0
+    PassLoc: 3
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 0
+    PassLoc: 3
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 0
+    PassLoc: 3
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 0
+    PassLoc: 4
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 0
+    PassLoc: 4
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 0
+    PassLoc: 4
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 0
+    PassLoc: 4
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 1
+    PassLoc: 0
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 1
+    PassLoc: 0
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 1
+    PassLoc: 0
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 1
+    PassLoc: 0
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 1
+    PassLoc: 1
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 1
+    PassLoc: 1
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 1
+    PassLoc: 1
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 1
+    PassLoc: 1
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 1
+    PassLoc: 2
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 1
+    PassLoc: 2
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 1
+    PassLoc: 2
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 1
+    PassLoc: 2
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 1
+    PassLoc: 3
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 1
+    PassLoc: 3
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 1
+    PassLoc: 3
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 1
+    PassLoc: 3
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 1
+    PassLoc: 4
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 1
+    PassLoc: 4
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 1
+    PassLoc: 4
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 1
+    PassLoc: 4
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 2
+    PassLoc: 0
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 2
+    PassLoc: 0
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 2
+    PassLoc: 0
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 2
+    PassLoc: 0
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 2
+    PassLoc: 1
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 2
+    PassLoc: 1
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 2
+    PassLoc: 1
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 2
+    PassLoc: 1
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 2
+    PassLoc: 2
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 2
+    PassLoc: 2
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 2
+    PassLoc: 2
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 2
+    PassLoc: 2
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 2
+    PassLoc: 3
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 2
+    PassLoc: 3
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 2
+    PassLoc: 3
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 2
+    PassLoc: 3
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 2
+    PassLoc: 4
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 2
+    PassLoc: 4
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 2
+    PassLoc: 4
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 2
+    PassLoc: 4
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 3
+    PassLoc: 0
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 3
+    PassLoc: 0
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 3
+    PassLoc: 0
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 3
+    PassLoc: 0
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 3
+    PassLoc: 1
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 3
+    PassLoc: 1
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 3
+    PassLoc: 1
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 3
+    PassLoc: 1
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 3
+    PassLoc: 2
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 3
+    PassLoc: 2
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 3
+    PassLoc: 2
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 3
+    PassLoc: 2
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 3
+    PassLoc: 3
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 3
+    PassLoc: 3
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 3
+    PassLoc: 3
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 3
+    PassLoc: 3
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 3
+    PassLoc: 4
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 3
+    PassLoc: 4
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 3
+    PassLoc: 4
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 3
+    PassLoc: 4
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 4
+    PassLoc: 0
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 4
+    PassLoc: 0
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 4
+    PassLoc: 0
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 4
+    PassLoc: 0
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 4
+    PassLoc: 1
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 4
+    PassLoc: 1
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 4
+    PassLoc: 1
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 4
+    PassLoc: 1
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 4
+    PassLoc: 2
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 4
+    PassLoc: 2
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 4
+    PassLoc: 2
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 4
+    PassLoc: 2
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 4
+    PassLoc: 3
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 4
+    PassLoc: 3
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 4
+    PassLoc: 3
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 4
+    PassLoc: 3
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 4
+    PassLoc: 4
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 4
+    PassLoc: 4
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 4
+    PassLoc: 4
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 2
+    TaxiCol: 4
+    PassLoc: 4
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 0
+    PassLoc: 0
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 0
+    PassLoc: 0
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 0
+    PassLoc: 0
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 0
+    PassLoc: 0
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 0
+    PassLoc: 1
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 0
+    PassLoc: 1
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 0
+    PassLoc: 1
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 0
+    PassLoc: 1
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 0
+    PassLoc: 2
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 0
+    PassLoc: 2
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 0
+    PassLoc: 2
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 0
+    PassLoc: 2
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 0
+    PassLoc: 3
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 0
+    PassLoc: 3
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 0
+    PassLoc: 3
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 0
+    PassLoc: 3
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 0
+    PassLoc: 4
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 0
+    PassLoc: 4
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 0
+    PassLoc: 4
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 0
+    PassLoc: 4
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 1
+    PassLoc: 0
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 1
+    PassLoc: 0
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 1
+    PassLoc: 0
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 1
+    PassLoc: 0
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 1
+    PassLoc: 1
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 1
+    PassLoc: 1
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 1
+    PassLoc: 1
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 1
+    PassLoc: 1
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 1
+    PassLoc: 2
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 1
+    PassLoc: 2
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 1
+    PassLoc: 2
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 1
+    PassLoc: 2
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 1
+    PassLoc: 3
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 1
+    PassLoc: 3
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 1
+    PassLoc: 3
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 1
+    PassLoc: 3
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 1
+    PassLoc: 4
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 1
+    PassLoc: 4
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 1
+    PassLoc: 4
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 1
+    PassLoc: 4
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 2
+    PassLoc: 0
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 2
+    PassLoc: 0
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 2
+    PassLoc: 0
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 2
+    PassLoc: 0
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 2
+    PassLoc: 1
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 2
+    PassLoc: 1
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 2
+    PassLoc: 1
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 2
+    PassLoc: 1
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 2
+    PassLoc: 2
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 2
+    PassLoc: 2
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 2
+    PassLoc: 2
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 2
+    PassLoc: 2
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 2
+    PassLoc: 3
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 2
+    PassLoc: 3
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 2
+    PassLoc: 3
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 2
+    PassLoc: 3
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 2
+    PassLoc: 4
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 2
+    PassLoc: 4
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 2
+    PassLoc: 4
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 2
+    PassLoc: 4
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 3
+    PassLoc: 0
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 3
+    PassLoc: 0
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 3
+    PassLoc: 0
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 3
+    PassLoc: 0
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 3
+    PassLoc: 1
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 3
+    PassLoc: 1
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 3
+    PassLoc: 1
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 3
+    PassLoc: 1
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 3
+    PassLoc: 2
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 3
+    PassLoc: 2
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 3
+    PassLoc: 2
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 3
+    PassLoc: 2
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 3
+    PassLoc: 3
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 3
+    PassLoc: 3
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 3
+    PassLoc: 3
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 3
+    PassLoc: 3
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 3
+    PassLoc: 4
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 3
+    PassLoc: 4
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 3
+    PassLoc: 4
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 3
+    PassLoc: 4
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 4
+    PassLoc: 0
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 4
+    PassLoc: 0
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 4
+    PassLoc: 0
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 4
+    PassLoc: 0
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 4
+    PassLoc: 1
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 4
+    PassLoc: 1
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 4
+    PassLoc: 1
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 4
+    PassLoc: 1
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 4
+    PassLoc: 2
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 4
+    PassLoc: 2
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 4
+    PassLoc: 2
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 4
+    PassLoc: 2
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 4
+    PassLoc: 3
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 4
+    PassLoc: 3
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 4
+    PassLoc: 3
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 4
+    PassLoc: 3
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 4
+    PassLoc: 4
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 4
+    PassLoc: 4
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 4
+    PassLoc: 4
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 3
+    TaxiCol: 4
+    PassLoc: 4
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 4
+    TaxiCol: 0
+    PassLoc: 0
+    DestLoc: 0
+    DebugTaxiLoc: 3
+  - TaxiRow: 4
+    TaxiCol: 0
+    PassLoc: 0
+    DestLoc: 1
+    DebugTaxiLoc: 3
+  - TaxiRow: 4
+    TaxiCol: 0
+    PassLoc: 0
+    DestLoc: 2
+    DebugTaxiLoc: 3
+  - TaxiRow: 4
+    TaxiCol: 0
+    PassLoc: 0
+    DestLoc: 3
+    DebugTaxiLoc: 3
+  - TaxiRow: 4
+    TaxiCol: 0
+    PassLoc: 1
+    DestLoc: 0
+    DebugTaxiLoc: 3
+  - TaxiRow: 4
+    TaxiCol: 0
+    PassLoc: 1
+    DestLoc: 1
+    DebugTaxiLoc: 3
+  - TaxiRow: 4
+    TaxiCol: 0
+    PassLoc: 1
+    DestLoc: 2
+    DebugTaxiLoc: 3
+  - TaxiRow: 4
+    TaxiCol: 0
+    PassLoc: 1
+    DestLoc: 3
+    DebugTaxiLoc: 3
+  - TaxiRow: 4
+    TaxiCol: 0
+    PassLoc: 2
+    DestLoc: 0
+    DebugTaxiLoc: 3
+  - TaxiRow: 4
+    TaxiCol: 0
+    PassLoc: 2
+    DestLoc: 1
+    DebugTaxiLoc: 3
+  - TaxiRow: 4
+    TaxiCol: 0
+    PassLoc: 2
+    DestLoc: 2
+    DebugTaxiLoc: 3
+  - TaxiRow: 4
+    TaxiCol: 0
+    PassLoc: 2
+    DestLoc: 3
+    DebugTaxiLoc: 3
+  - TaxiRow: 4
+    TaxiCol: 0
+    PassLoc: 3
+    DestLoc: 0
+    DebugTaxiLoc: 3
+  - TaxiRow: 4
+    TaxiCol: 0
+    PassLoc: 3
+    DestLoc: 1
+    DebugTaxiLoc: 3
+  - TaxiRow: 4
+    TaxiCol: 0
+    PassLoc: 3
+    DestLoc: 2
+    DebugTaxiLoc: 3
+  - TaxiRow: 4
+    TaxiCol: 0
+    PassLoc: 3
+    DestLoc: 3
+    DebugTaxiLoc: 3
+  - TaxiRow: 4
+    TaxiCol: 0
+    PassLoc: 4
+    DestLoc: 0
+    DebugTaxiLoc: 3
+  - TaxiRow: 4
+    TaxiCol: 0
+    PassLoc: 4
+    DestLoc: 1
+    DebugTaxiLoc: 3
+  - TaxiRow: 4
+    TaxiCol: 0
+    PassLoc: 4
+    DestLoc: 2
+    DebugTaxiLoc: 3
+  - TaxiRow: 4
+    TaxiCol: 0
+    PassLoc: 4
+    DestLoc: 3
+    DebugTaxiLoc: 3
+  - TaxiRow: 4
+    TaxiCol: 1
+    PassLoc: 0
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 4
+    TaxiCol: 1
+    PassLoc: 0
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 4
+    TaxiCol: 1
+    PassLoc: 0
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 4
+    TaxiCol: 1
+    PassLoc: 0
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 4
+    TaxiCol: 1
+    PassLoc: 1
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 4
+    TaxiCol: 1
+    PassLoc: 1
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 4
+    TaxiCol: 1
+    PassLoc: 1
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 4
+    TaxiCol: 1
+    PassLoc: 1
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 4
+    TaxiCol: 1
+    PassLoc: 2
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 4
+    TaxiCol: 1
+    PassLoc: 2
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 4
+    TaxiCol: 1
+    PassLoc: 2
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 4
+    TaxiCol: 1
+    PassLoc: 2
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 4
+    TaxiCol: 1
+    PassLoc: 3
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 4
+    TaxiCol: 1
+    PassLoc: 3
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 4
+    TaxiCol: 1
+    PassLoc: 3
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 4
+    TaxiCol: 1
+    PassLoc: 3
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 4
+    TaxiCol: 1
+    PassLoc: 4
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 4
+    TaxiCol: 1
+    PassLoc: 4
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 4
+    TaxiCol: 1
+    PassLoc: 4
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 4
+    TaxiCol: 1
+    PassLoc: 4
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 4
+    TaxiCol: 2
+    PassLoc: 0
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 4
+    TaxiCol: 2
+    PassLoc: 0
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 4
+    TaxiCol: 2
+    PassLoc: 0
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 4
+    TaxiCol: 2
+    PassLoc: 0
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 4
+    TaxiCol: 2
+    PassLoc: 1
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 4
+    TaxiCol: 2
+    PassLoc: 1
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 4
+    TaxiCol: 2
+    PassLoc: 1
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 4
+    TaxiCol: 2
+    PassLoc: 1
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 4
+    TaxiCol: 2
+    PassLoc: 2
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 4
+    TaxiCol: 2
+    PassLoc: 2
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 4
+    TaxiCol: 2
+    PassLoc: 2
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 4
+    TaxiCol: 2
+    PassLoc: 2
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 4
+    TaxiCol: 2
+    PassLoc: 3
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 4
+    TaxiCol: 2
+    PassLoc: 3
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 4
+    TaxiCol: 2
+    PassLoc: 3
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 4
+    TaxiCol: 2
+    PassLoc: 3
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 4
+    TaxiCol: 2
+    PassLoc: 4
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 4
+    TaxiCol: 2
+    PassLoc: 4
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 4
+    TaxiCol: 2
+    PassLoc: 4
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 4
+    TaxiCol: 2
+    PassLoc: 4
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 4
+    TaxiCol: 3
+    PassLoc: 0
+    DestLoc: 0
+    DebugTaxiLoc: 2
+  - TaxiRow: 4
+    TaxiCol: 3
+    PassLoc: 0
+    DestLoc: 1
+    DebugTaxiLoc: 2
+  - TaxiRow: 4
+    TaxiCol: 3
+    PassLoc: 0
+    DestLoc: 2
+    DebugTaxiLoc: 2
+  - TaxiRow: 4
+    TaxiCol: 3
+    PassLoc: 0
+    DestLoc: 3
+    DebugTaxiLoc: 2
+  - TaxiRow: 4
+    TaxiCol: 3
+    PassLoc: 1
+    DestLoc: 0
+    DebugTaxiLoc: 2
+  - TaxiRow: 4
+    TaxiCol: 3
+    PassLoc: 1
+    DestLoc: 1
+    DebugTaxiLoc: 2
+  - TaxiRow: 4
+    TaxiCol: 3
+    PassLoc: 1
+    DestLoc: 2
+    DebugTaxiLoc: 2
+  - TaxiRow: 4
+    TaxiCol: 3
+    PassLoc: 1
+    DestLoc: 3
+    DebugTaxiLoc: 2
+  - TaxiRow: 4
+    TaxiCol: 3
+    PassLoc: 2
+    DestLoc: 0
+    DebugTaxiLoc: 2
+  - TaxiRow: 4
+    TaxiCol: 3
+    PassLoc: 2
+    DestLoc: 1
+    DebugTaxiLoc: 2
+  - TaxiRow: 4
+    TaxiCol: 3
+    PassLoc: 2
+    DestLoc: 2
+    DebugTaxiLoc: 2
+  - TaxiRow: 4
+    TaxiCol: 3
+    PassLoc: 2
+    DestLoc: 3
+    DebugTaxiLoc: 2
+  - TaxiRow: 4
+    TaxiCol: 3
+    PassLoc: 3
+    DestLoc: 0
+    DebugTaxiLoc: 2
+  - TaxiRow: 4
+    TaxiCol: 3
+    PassLoc: 3
+    DestLoc: 1
+    DebugTaxiLoc: 2
+  - TaxiRow: 4
+    TaxiCol: 3
+    PassLoc: 3
+    DestLoc: 2
+    DebugTaxiLoc: 2
+  - TaxiRow: 4
+    TaxiCol: 3
+    PassLoc: 3
+    DestLoc: 3
+    DebugTaxiLoc: 2
+  - TaxiRow: 4
+    TaxiCol: 3
+    PassLoc: 4
+    DestLoc: 0
+    DebugTaxiLoc: 2
+  - TaxiRow: 4
+    TaxiCol: 3
+    PassLoc: 4
+    DestLoc: 1
+    DebugTaxiLoc: 2
+  - TaxiRow: 4
+    TaxiCol: 3
+    PassLoc: 4
+    DestLoc: 2
+    DebugTaxiLoc: 2
+  - TaxiRow: 4
+    TaxiCol: 3
+    PassLoc: 4
+    DestLoc: 3
+    DebugTaxiLoc: 2
+  - TaxiRow: 4
+    TaxiCol: 4
+    PassLoc: 0
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 4
+    TaxiCol: 4
+    PassLoc: 0
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 4
+    TaxiCol: 4
+    PassLoc: 0
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 4
+    TaxiCol: 4
+    PassLoc: 0
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 4
+    TaxiCol: 4
+    PassLoc: 1
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 4
+    TaxiCol: 4
+    PassLoc: 1
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 4
+    TaxiCol: 4
+    PassLoc: 1
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 4
+    TaxiCol: 4
+    PassLoc: 1
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 4
+    TaxiCol: 4
+    PassLoc: 2
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 4
+    TaxiCol: 4
+    PassLoc: 2
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 4
+    TaxiCol: 4
+    PassLoc: 2
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 4
+    TaxiCol: 4
+    PassLoc: 2
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 4
+    TaxiCol: 4
+    PassLoc: 3
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 4
+    TaxiCol: 4
+    PassLoc: 3
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 4
+    TaxiCol: 4
+    PassLoc: 3
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 4
+    TaxiCol: 4
+    PassLoc: 3
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  - TaxiRow: 4
+    TaxiCol: 4
+    PassLoc: 4
+    DestLoc: 0
+    DebugTaxiLoc: 4
+  - TaxiRow: 4
+    TaxiCol: 4
+    PassLoc: 4
+    DestLoc: 1
+    DebugTaxiLoc: 4
+  - TaxiRow: 4
+    TaxiCol: 4
+    PassLoc: 4
+    DestLoc: 2
+    DebugTaxiLoc: 4
+  - TaxiRow: 4
+    TaxiCol: 4
+    PassLoc: 4
+    DestLoc: 3
+    DebugTaxiLoc: 4
+  Actions:
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0
+    Two: 0
+    Three: 0
+    Four: 0
+    Five: 1
+    Six: 0
+  - One: 0
+    Two: 0
+    Three: 0.2
+    Four: 0
+    Five: 0.6
+    Six: 0.2
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 1
+    Two: 0
+    Three: 0
+    Four: 0
+    Five: 0
+    Six: 0
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.13333334
+    Two: 0
+    Three: 0
+    Four: 0
+    Five: 0.6
+    Six: 0.26666668
+  - One: 0.05263158
+    Two: 0
+    Three: 0.03508772
+    Four: 0
+    Five: 0.45614034
+    Six: 0.45614034
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.2
+    Two: 0
+    Three: 0
+    Four: 0.2
+    Five: 0
+    Six: 0.6
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.33333334
+    Two: 0
+    Three: 0
+    Four: 0
+    Five: 0
+    Six: 0.6666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.26984128
+    Two: 0.6904762
+    Three: 0
+    Four: 0
+    Five: 0.03968254
+    Six: 0
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.6666667
+    Two: 0
+    Three: 0
+    Four: 0
+    Five: 0
+    Six: 0.33333334
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0
+    Two: 0.4
+    Three: 0
+    Four: 0
+    Five: 0.2
+    Six: 0.4
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0
+    Two: 0
+    Three: 0.2
+    Four: 0
+    Five: 0.2
+    Six: 0.6
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.1904762
+    Two: 0
+    Three: 0.0952381
+    Four: 0
+    Five: 0.5714286
+    Six: 0.14285715
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.13793103
+    Two: 0
+    Three: 0.055172414
+    Four: 0
+    Five: 0.31034482
+    Six: 0.49655172
+  - One: 0.11646587
+    Two: 0
+    Three: 0.052208837
+    Four: 0
+    Five: 0.25301206
+    Six: 0.57831323
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.2857143
+    Two: 0.071428575
+    Three: 0
+    Four: 0
+    Five: 0.14285715
+    Six: 0.5
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.5
+    Two: 0
+    Three: 0
+    Four: 0.5
+    Five: 0
+    Six: 0
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 1
+    Two: 0
+    Three: 0
+    Four: 0
+    Five: 0
+    Six: 0
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.4
+    Two: 0
+    Three: 0
+    Four: 0.13333334
+    Five: 0.4
+    Six: 0.06666667
+  - One: 0.44
+    Two: 0.32
+    Three: 0
+    Four: 0.24
+    Five: 0
+    Six: 0
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.31034482
+    Two: 0
+    Three: 0
+    Four: 0
+    Five: 0.31034482
+    Six: 0.37931034
+  - One: 0.25
+    Two: 0
+    Three: 0
+    Four: 0
+    Five: 0
+    Six: 0.75
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.0073394496
+    Two: 0
+    Three: 0
+    Four: 0.0036697248
+    Five: 0.0036697248
+    Six: 0.9853211
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.2647059
+    Two: 0
+    Three: 0
+    Four: 0
+    Five: 0.64705884
+    Six: 0.0882353
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0
+    Two: 0
+    Three: 0
+    Four: 0
+    Five: 0.85714287
+    Six: 0.14285715
+  - One: 1
+    Two: 0
+    Three: 0
+    Four: 0
+    Five: 0
+    Six: 0
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0
+    Two: 0
+    Three: 0
+    Four: 0
+    Five: 1
+    Six: 0
+  - One: 0
+    Two: 0.11111111
+    Three: 0
+    Four: 0
+    Five: 0.8888889
+    Six: 0
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.33333334
+    Two: 0
+    Three: 0
+    Four: 0
+    Five: 0.6666667
+    Six: 0
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.33333334
+    Two: 0
+    Three: 0
+    Four: 0.33333334
+    Five: 0.33333334
+    Six: 0
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.6666667
+    Two: 0.33333334
+    Three: 0
+    Four: 0
+    Five: 0
+    Six: 0
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.42857143
+    Two: 0.5714286
+    Three: 0
+    Four: 0
+    Five: 0
+    Six: 0
+  - One: 1
+    Two: 0
+    Three: 0
+    Four: 0
+    Five: 0
+    Six: 0
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.0942029
+    Two: 0.23188406
+    Three: 0
+    Four: 0.007246377
+    Five: 0.64492756
+    Six: 0.02173913
+  - One: 0.19354838
+    Two: 0.2580645
+    Three: 0
+    Four: 0
+    Five: 0.5483871
+    Six: 0
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.375
+    Two: 0.25
+    Three: 0.25
+    Four: 0
+    Five: 0
+    Six: 0.125
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.4
+    Two: 0
+    Three: 0.1
+    Four: 0.1
+    Five: 0.3
+    Six: 0.1
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.1627907
+    Two: 0
+    Three: 0
+    Four: 0.023255814
+    Five: 0.20930232
+    Six: 0.60465115
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0
+    Two: 0
+    Three: 0.6666667
+    Four: 0
+    Five: 0.33333334
+    Six: 0
+  - One: 0.98
+    Two: 0
+    Three: 0
+    Four: 0
+    Five: 0.013333334
+    Six: 0.006666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.18181819
+    Two: 0
+    Three: 0
+    Four: 0
+    Five: 0
+    Six: 0.8181818
+  - One: 0
+    Two: 0.25
+    Three: 0
+    Four: 0.5
+    Five: 0
+    Six: 0.25
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.08045977
+    Two: 0.11494253
+    Three: 0.10344828
+    Four: 0.022988506
+    Five: 0.22413793
+    Six: 0.45402297
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.28
+    Two: 0.12
+    Three: 0.04
+    Four: 0
+    Five: 0.24
+    Six: 0.32
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.2
+    Two: 0.028571429
+    Three: 0.04761905
+    Four: 0.00952381
+    Five: 0.22857143
+    Six: 0.4857143
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.23762377
+    Two: 0.044554457
+    Three: 0.044554457
+    Four: 0
+    Five: 0.33663365
+    Six: 0.33663365
+  - One: 0.12444445
+    Two: 0.2777778
+    Three: 0.017777778
+    Four: 0.037777778
+    Five: 0.22666667
+    Six: 0.31555554
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0
+    Two: 0
+    Three: 0
+    Four: 0
+    Five: 0
+    Six: 1
+  - One: 0.5
+    Two: 0
+    Three: 0
+    Four: 0.5
+    Five: 0
+    Six: 0
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.1891892
+    Two: 0.24324325
+    Three: 0.16216215
+    Four: 0.054054055
+    Five: 0.2972973
+    Six: 0.054054055
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.2748538
+    Two: 0.01754386
+    Three: 0.07017544
+    Four: 0.040935673
+    Five: 0.38011697
+    Six: 0.21637426
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.30555555
+    Two: 0.027777778
+    Three: 0.027777778
+    Four: 0.20833333
+    Five: 0.20833333
+    Six: 0.22222222
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.22429906
+    Two: 0.06853583
+    Three: 0.028037382
+    Four: 0.211838
+    Five: 0.4143302
+    Six: 0.0529595
+  - One: 0.32098764
+    Two: 0.16049382
+    Three: 0.11111111
+    Four: 0.037037037
+    Five: 0.32098764
+    Six: 0.049382716
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.6666667
+    Two: 0
+    Three: 0
+    Four: 0
+    Five: 0.22222222
+    Six: 0.11111111
+  - One: 0
+    Two: 0.25
+    Three: 0.5
+    Four: 0.25
+    Five: 0
+    Six: 0
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.121212125
+    Two: 0.09090909
+    Three: 0
+    Four: 0.24242425
+    Five: 0.33333334
+    Six: 0.21212122
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.23357664
+    Two: 0.24817519
+    Three: 0.05109489
+    Four: 0.03649635
+    Five: 0.40875912
+    Six: 0.02189781
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.15686275
+    Two: 0.13725491
+    Three: 0.11764706
+    Four: 0.09803922
+    Five: 0.3529412
+    Six: 0.13725491
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.25799572
+    Two: 0.11727079
+    Three: 0.14072494
+    Four: 0.042643923
+    Five: 0.41364604
+    Six: 0.02771855
+  - One: 0.0877193
+    Two: 0.3508772
+    Three: 0
+    Four: 0.1754386
+    Five: 0.36842105
+    Six: 0.01754386
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0
+    Two: 0.125
+    Three: 0
+    Four: 0
+    Five: 0.375
+    Six: 0.5
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.125
+    Two: 0.3125
+    Three: 0.0625
+    Four: 0
+    Five: 0.5
+    Six: 0
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0
+    Two: 0.6666667
+    Three: 0.33333334
+    Four: 0
+    Five: 0
+    Six: 0
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.13636364
+    Two: 0.6818182
+    Three: 0
+    Four: 0
+    Five: 0
+    Six: 0.18181819
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.5
+    Two: 0.25
+    Three: 0.25
+    Four: 0
+    Five: 0
+    Six: 0
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.47727272
+    Two: 0.06818182
+    Three: 0
+    Four: 0
+    Five: 0.3181818
+    Six: 0.13636364
+  - One: 0.53333336
+    Two: 0.06666667
+    Three: 0
+    Four: 0.06666667
+    Five: 0.33333334
+    Six: 0
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.2413793
+    Two: 0.2413793
+    Three: 0.27586207
+    Four: 0.2413793
+    Five: 0
+    Six: 0
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.071428575
+    Two: 0.71428573
+    Three: 0.071428575
+    Four: 0
+    Five: 0
+    Six: 0.14285715
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.2
+    Two: 0.4
+    Three: 0
+    Four: 0
+    Five: 0.26666668
+    Six: 0.13333334
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.33333334
+    Two: 0.055555556
+    Three: 0.22222222
+    Four: 0.055555556
+    Five: 0.22222222
+    Six: 0.11111111
+  - One: 0.17197452
+    Two: 0.6496815
+    Three: 0.01910828
+    Four: 0.070063695
+    Five: 0.03821656
+    Six: 0.050955415
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.083333336
+    Two: 0.6666667
+    Three: 0
+    Four: 0.083333336
+    Five: 0
+    Six: 0.16666667
+  - One: 0.18181819
+    Two: 0.45454547
+    Three: 0.09090909
+    Four: 0.27272728
+    Five: 0
+    Six: 0
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.42307693
+    Two: 0.07692308
+    Three: 0.21153846
+    Four: 0.03846154
+    Five: 0.13461539
+    Six: 0.115384616
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.1875
+    Two: 0.5625
+    Three: 0
+    Four: 0
+    Five: 0.1875
+    Six: 0.0625
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.032258064
+    Two: 0.7096774
+    Three: 0.016129032
+    Four: 0.048387095
+    Five: 0.12903225
+    Six: 0.06451613
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.18965517
+    Two: 0.5603448
+    Three: 0.00862069
+    Four: 0.00862069
+    Five: 0.14655173
+    Six: 0.0862069
+  - One: 0.42180094
+    Two: 0.13744076
+    Three: 0.09952607
+    Four: 0
+    Five: 0.25592417
+    Six: 0.08530806
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0
+    Two: 0.6666667
+    Three: 0
+    Four: 0.33333334
+    Five: 0
+    Six: 0
+  - One: 0
+    Two: 0
+    Three: 0
+    Four: 1
+    Five: 0
+    Six: 0
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.06451613
+    Two: 0.12903225
+    Three: 0.032258064
+    Four: 0.516129
+    Five: 0.16129032
+    Six: 0.09677419
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.10752688
+    Two: 0.43010753
+    Three: 0.10752688
+    Four: 0
+    Five: 0.12903225
+    Six: 0.22580644
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.08163265
+    Two: 0.3265306
+    Three: 0.26530612
+    Four: 0.08163265
+    Five: 0.20408164
+    Six: 0.040816326
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.07826087
+    Two: 0.39130434
+    Three: 0.3043478
+    Four: 0.07826087
+    Five: 0.13043478
+    Six: 0.017391304
+  - One: 0.26666668
+    Two: 0.2
+    Three: 0.06666667
+    Four: 0.4
+    Five: 0
+    Six: 0.06666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0
+    Two: 0.44444445
+    Three: 0
+    Four: 0.33333334
+    Five: 0
+    Six: 0.22222222
+  - One: 0
+    Two: 0
+    Three: 0
+    Four: 1
+    Five: 0
+    Six: 0
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.19565217
+    Two: 0.10869565
+    Three: 0.2173913
+    Four: 0.1521739
+    Five: 0.2173913
+    Six: 0.10869565
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.21176471
+    Two: 0.2382353
+    Three: 0
+    Four: 0.05882353
+    Five: 0.2882353
+    Six: 0.20294118
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.23684211
+    Two: 0.31578946
+    Three: 0
+    Four: 0.18421052
+    Five: 0.2631579
+    Six: 0
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.14229248
+    Two: 0.37549406
+    Three: 0
+    Four: 0.1660079
+    Five: 0.2964427
+    Six: 0.019762846
+  - One: 0.37142858
+    Two: 0.08571429
+    Three: 0
+    Four: 0.08571429
+    Five: 0.4
+    Six: 0.057142857
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.5
+    Two: 0
+    Three: 0.25
+    Four: 0
+    Five: 0.25
+    Six: 0
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.5
+    Two: 0.33333334
+    Three: 0.16666667
+    Four: 0
+    Five: 0
+    Six: 0
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.5
+    Two: 0.1
+    Three: 0
+    Four: 0
+    Five: 0.1
+    Six: 0.3
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.33333334
+    Two: 0.6666667
+    Three: 0
+    Four: 0
+    Five: 0
+    Six: 0
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0
+    Two: 1
+    Three: 0
+    Four: 0
+    Five: 0
+    Six: 0
+  - One: 0.083333336
+    Two: 0.25
+    Three: 0.083333336
+    Four: 0
+    Five: 0.25
+    Six: 0.33333334
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.0088408645
+    Two: 0.0088408645
+    Three: 0.007858546
+    Four: 0.9508841
+    Five: 0.015717093
+    Six: 0.007858546
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.3809524
+    Two: 0.1904762
+    Three: 0
+    Four: 0
+    Five: 0.14285715
+    Six: 0.2857143
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.1
+    Two: 0.5
+    Three: 0.3
+    Four: 0
+    Five: 0
+    Six: 0.1
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0
+    Two: 0.14285715
+    Three: 0.42857143
+    Four: 0
+    Five: 0.14285715
+    Six: 0.2857143
+  - One: 0.35106382
+    Two: 0.43085107
+    Three: 0.05319149
+    Four: 0
+    Five: 0.021276595
+    Six: 0.14361702
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.6111111
+    Two: 0.22222222
+    Three: 0
+    Four: 0
+    Five: 0
+    Six: 0.16666667
+  - One: 0.2
+    Two: 0.6
+    Three: 0
+    Four: 0.2
+    Five: 0
+    Six: 0
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.0019455253
+    Two: 0.013618677
+    Three: 0.9435798
+    Four: 0.013618677
+    Five: 0.016536964
+    Six: 0.010700389
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.5
+    Three: 0.33333334
+    Four: 0
+    Five: 0
+    Six: 0
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.6
+    Two: 0.17777778
+    Three: 0.11111111
+    Four: 0.022222223
+    Five: 0.044444446
+    Six: 0.044444446
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.33333334
+    Two: 0.23333333
+    Three: 0.15
+    Four: 0.075
+    Five: 0.108333334
+    Six: 0.1
+  - One: 0.08888889
+    Two: 0.24444444
+    Three: 0
+    Four: 0
+    Five: 0.26666668
+    Six: 0.4
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.06666667
+    Two: 0.13333334
+    Three: 0.2
+    Four: 0.26666668
+    Five: 0.2
+    Six: 0.13333334
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0
+    Two: 0.5
+    Three: 0.16666667
+    Four: 0
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.22695035
+    Two: 0.19148937
+    Three: 0.035460994
+    Four: 0.04964539
+    Five: 0.19148937
+    Six: 0.30496454
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.14634146
+    Two: 0.19512194
+    Three: 0.024390243
+    Four: 0
+    Five: 0.17073171
+    Six: 0.46341464
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.4680851
+    Two: 0.44680852
+    Three: 0
+    Four: 0.021276595
+    Five: 0.021276595
+    Six: 0.04255319
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0
+    Five: 0.5
+    Six: 0
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0
+    Two: 0.5
+    Three: 0.25
+    Four: 0
+    Five: 0
+    Six: 0.25
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0
+    Two: 0.5
+    Three: 0
+    Four: 0.1
+    Five: 0.2
+    Six: 0.2
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.20532319
+    Two: 0.21292776
+    Three: 0.02661597
+    Four: 0.015209125
+    Five: 0.19011407
+    Six: 0.34980989
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.125
+    Two: 0.25
+    Three: 0
+    Four: 0.041666668
+    Five: 0.25
+    Six: 0.33333334
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.20481928
+    Two: 0.43975905
+    Three: 0.012048192
+    Four: 0.012048192
+    Five: 0.1746988
+    Six: 0.15662651
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0
+    Four: 0
+    Five: 0.33333334
+    Six: 0.33333334
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.2
+    Two: 0
+    Three: 0
+    Four: 0
+    Five: 0.4
+    Six: 0.4
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0
+    Two: 0.060606062
+    Three: 0
+    Four: 0
+    Five: 0.42424244
+    Six: 0.5151515
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.04347826
+    Two: 0.06521739
+    Three: 0.08695652
+    Four: 0.08695652
+    Five: 0.3043478
+    Six: 0.41304347
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.125
+    Two: 0.125
+    Three: 0.3125
+    Four: 0.3125
+    Five: 0
+    Six: 0.125
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0
+    Two: 1
+    Three: 0
+    Four: 0
+    Five: 0
+    Six: 0
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0
+    Two: 0.14102565
+    Three: 0.025641026
+    Four: 0.44871795
+    Five: 0.21794872
+    Six: 0.16666667
+  - One: 0.24444444
+    Two: 0.4888889
+    Three: 0
+    Four: 0
+    Five: 0.06666667
+    Six: 0.2
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0
+    Two: 1
+    Three: 0
+    Four: 0
+    Five: 0
+    Six: 0
+  - One: 0
+    Two: 0.23076923
+    Three: 0.115384616
+    Four: 0
+    Five: 0.15384616
+    Six: 0.5
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.20833333
+    Two: 0.25
+    Three: 0.20833333
+    Four: 0.16666667
+    Five: 0
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0
+    Two: 0.1827957
+    Three: 0.40860215
+    Four: 0.032258064
+    Five: 0.086021505
+    Six: 0.29032257
+  - One: 0.022346368
+    Two: 0.05586592
+    Three: 0
+    Four: 0.022346368
+    Five: 0.6480447
+    Six: 0.25139666
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.33333334
+    Two: 0.33333334
+    Three: 0
+    Four: 0.33333334
+    Five: 0
+    Six: 0
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.09677419
+    Two: 0.06451613
+    Three: 0.06451613
+    Four: 0
+    Five: 0.516129
+    Six: 0.2580645
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.125
+    Two: 0.375
+    Three: 0
+    Four: 0
+    Five: 0.25
+    Six: 0.25
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0
+    Two: 0.33333334
+    Three: 0
+    Four: 0.33333334
+    Five: 0
+    Six: 0.33333334
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0
+    Two: 0.037037037
+    Three: 0.037037037
+    Four: 0.055555556
+    Five: 0.5185185
+    Six: 0.35185185
+  - One: 0
+    Two: 0
+    Three: 0
+    Four: 0
+    Five: 0.97461927
+    Six: 0.02538071
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.33333334
+    Two: 0
+    Three: 0.33333334
+    Four: 0.33333334
+    Five: 0
+    Six: 0
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.014705882
+    Two: 0.036764707
+    Three: 0
+    Four: 0.014705882
+    Five: 0.3529412
+    Six: 0.5808824
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.06451613
+    Two: 0.2580645
+    Three: 0
+    Four: 0
+    Five: 0.16129032
+    Six: 0.516129
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0
+    Two: 0.041666668
+    Three: 0.083333336
+    Four: 0.083333336
+    Five: 0.25
+    Six: 0.5416667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667
+  - One: 0
+    Two: 0.08695652
+    Three: 0.08695652
+    Four: 0
+    Five: 0.26086956
+    Six: 0.5652174
+  - One: 0.00862069
+    Two: 0.00862069
+    Three: 0
+    Four: 0.01724138
+    Five: 0.45689654
+    Six: 0.5086207
+  - One: 0.16666667
+    Two: 0.16666667
+    Three: 0.16666667
+    Four: 0.16666667
+    Five: 0.16666667
+    Six: 0.16666667

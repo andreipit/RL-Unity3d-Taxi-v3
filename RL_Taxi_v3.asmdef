@@ -1,0 +1,15 @@
+{
+    "name": "RL_Taxi_v3",
+    "references": [
+        "GUID:52f67975ca11de344b04ff3c1b411df6"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
